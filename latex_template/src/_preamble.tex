@@ -1,0 +1,56 @@
+% Beamer Configuration
+%\usetheme{Madrid}
+
+% Title config
+\title {Example}
+
+\author{Virlan Andrei Cristian}
+
+\date{22 June 2023}
+
+% Packages
+\usepackage{amsmath}
+\usepackage{import}
+\usepackage{pdfpages}
+\usepackage{transparent}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{csquotes}
+\usepackage[english]{babel}
+\usepackage[backend=biber]{biblatex}
+\usepackage{import}
+\usepackage{graphicx}
+\usepackage{xifthen}
+\usepackage{pdfpages}
+\usepackage{transparent}
+\usepackage{xifthen}
+\usepackage{wrapfig}
+
+% Incfig configuration
+
+\newcommand{\incfig}[1]{%
+    \def\svgwidth{\columnwidth}
+    \import{./images/}{#1.pdf_tex}
+}
+
+% Hyperref configuration
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=white,
+    urlcolor=black
+}
+
+% Graphic path config
+\graphicspath{ {../images/} }
+
+% Bibtex configuration
+\addbibresource{bibliography.bib}
+
+%\setbeamertemplate{bibliography item}[]
+%\setbeamertemplate{caption}[numbered]
+
+%\setbeamerfont{caption name}{series=fseries}
+%\setbeamertemplate{caption label separator}[column]
+%\hypersetup{pdfpagemode=FullScreen}

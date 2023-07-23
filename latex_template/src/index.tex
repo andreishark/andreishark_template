@@ -1,0 +1,21 @@
+% Am folosit VS Code, recomand. Of course cu extensia LaTeX Workshop si LaTeX Utilities.
+% Pt biblatex am folosit ca backend biber, deci uitete daca il ai instalat
+
+\documentclass[12pt]{article}
+\input{./_preamble}
+
+\begin{document}
+
+\maketitle
+
+\input{./examples/problema1}
+
+\input{examples/problema2}
+
+% !! Bib e foarte pretentios. Am stat doar 1 ora sa-mi dau seama 
+% !! ca nu poti folosi underscore(_) deci daca pui ceva acolo si 
+% !! iti da eroare, uitete sa vezi cum ai formatat
+\nocite{*} % Show all Bib-entries
+\printbibliography
+
+\end{document}
